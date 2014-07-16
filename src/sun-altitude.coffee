@@ -1,4 +1,4 @@
-J = require './julian_date.coffee'
+J = require './julian-date.coffee'
 H = require './helpers.coffee'
 
 

@@ -1,0 +1,19 @@
+{
+  "name": "sun-altitude.js",
+  "version": "0.0.1",
+  "description": "Calculate sun altitude given date, time and geolocation.",
+  "main": "ext/sun-altitude.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/giraj/sun-altitude.js.git"
+  },
+  "author": "Jarl Gunnar T. Flaten",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/giraj/sun-altitude.js/issues"
+  },
+  "homepage": "https://github.com/giraj/sun-altitude.js"
+}

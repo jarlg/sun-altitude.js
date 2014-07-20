@@ -1,8 +1,9 @@
-sun-altitude.js
-###############
-Calculate the (TODO wikipedia)[altitude] of the sun given date/time and geolocation.
+#sun-altitude.js
 
-USAGE
+Calculate the altitude of the sun given date/time and geolocation.
+
+###USAGE
+
 ```
 S = require('sun-altitude.js');
 S.get_sun_altitude(date, latitude, longitude);

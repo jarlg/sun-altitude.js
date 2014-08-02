@@ -1,0 +1,28 @@
+body {
+    font: 15pt sans-serif;
+}
+
+form {
+    width: 80vw;
+    margin: 48pt auto 0;
+    text-align: center;
+}
+
+input {
+    display: inline;
+    width: 50px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    font: 15pt sans-serif;
+}
+
+.deg-input {
+    width: 70px;
+}
+
+#footer {
+    width: 60vw;
+    margin: 0 auto;
+    text-align: right;
+}

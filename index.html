@@ -2,8 +2,22 @@
 <html>
     <head>
         <title>Sun Altitude API</title>
-        <link href="PURE" rel="stylesheet">
+        <link rel='stylesheet' href='style.css'>
     </head>
-
-    <script src="build/main.js" type="text/js"></script>
+    <body>
+        <form>
+            Show me 
+            <input type='number' id='time-input'>
+            hours of the sun's altitude at 
+            <input type='number' id='lat-input' class='deg-input'>
+            degrees north, 
+            <input type='number' id='long-input' class='deg-input'>
+            degrees south
+        </form>
+        <canvas></canvas>
+        <section id='footer'>
+            get the code on <a href='github.com/giraj/sun-altitude'>github</a>
+        </section>
+        <script src="build/main.js" type="text/js"></script>
+    </body>
 </html>

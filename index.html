@@ -7,17 +7,17 @@
     <body>
         <form>
             Show me 
-            <input type='number' id='time-input'>
+            <input type='number' id='time-input' value='24'>
             hours of the sun's altitude at 
-            <input type='number' id='lat-input' class='deg-input'>
+            <input type='number' id='lat-input' class='deg-input' value='69.18'>
             degrees north, 
-            <input type='number' id='long-input' class='deg-input'>
+            <input type='number' id='long-input' class='deg-input' value='17.8'>
             degrees south
         </form>
-        <canvas></canvas>
+        <canvas id='alt-graph'></canvas>
         <section id='footer'>
             get the code on <a href='github.com/giraj/sun-altitude'>github</a>
         </section>
-        <script src="build/main.js" type="text/js"></script>
+        <script src="build/main.js"></script>
     </body>
 </html>

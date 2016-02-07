@@ -127,13 +127,26 @@ update = function() {
   return draw(parseInt($('#time-input').value), parseInt($('#lat-input').value), parseInt($('#long-input').value));
 };
 
-update();
-
 $('#time-input').addEventListener('input', update);
 
 $('#lat-input').addEventListener('input', update);
 
 $('#long-input').addEventListener('input', update);
+
+if (navigator.geolocation != null) {
+  navigator.geolocation.getCurrentPosition(function(location) {
+    console.log('what');
+    $('#lat-input').value = location.coords.latitude;
+    return $('#long-input').value = location.coords.longitude;
+  }, function(err) {
+    return console.log(err.stack || err);
+  }, {
+    timeout: 10000,
+    maximumAge: 60000
+  });
+} else {
+  update();
+}
 
 
 },{"./sun-altitude.coffee":4}],4:[function(require,module,exports){

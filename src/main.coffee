@@ -73,8 +73,6 @@ update = ->
         parseInt($('#long-input').value)
     )
 
-update()
-
 $ '#time-input'
     .addEventListener 'input', update
 
@@ -83,3 +81,19 @@ $ '#lat-input'
 
 $ '#long-input'
     .addEventListener 'input', update
+
+if navigator.geolocation?
+    navigator.geolocation.getCurrentPosition(
+        (location) ->
+            console.log 'what'
+            $ '#lat-input'
+                .value = location.coords.latitude
+            $ '#long-input'
+                .value = location.coords.longitude
+        ,
+        (err) -> console.log err.stack or err,
+        timeout: 10000,
+        maximumAge: 60000
+    )
+else
+    update()
